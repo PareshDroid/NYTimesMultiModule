@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tvData = findViewById<TextView>(R.id.tv_message)
-        tvData.text = viewModel.getSomeData()
 
     }
 

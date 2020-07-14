@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">NYTimesMultiModule</string>
+
+    <!-- Splash Strings-->
+    <string name="application_name">New York Times</string>
 </resources>
