@@ -3,6 +3,7 @@ package com.pareshdroid.nytimesmultimodule.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.navigation.fragment.NavHostFragment
 import com.pareshdroid.nytimesmultimodule.MyApplication
 import com.pareshdroid.nytimesmultimodule.R
 import com.pareshdroid.nytimesmultimodule.di.component.DaggerActivityComponent
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val host: NavHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment? ?: return
 
     }
 

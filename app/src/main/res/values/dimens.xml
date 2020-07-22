@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+
+    <!--card height small from 50 to 150dp-->
+    <dimen name="height_xsmall">50dp</dimen>
+    <dimen name="height_small">150dp</dimen>
+
+    <!--card height medium from 170 to 270dp-->
+    <dimen name="height_medium">170dp</dimen>
+    <dimen name="height_xmedium">270dp</dimen>
+
+    <!--card height large from 300 to 500dp-->
+    <dimen name="height_large">300dp</dimen>
+    <dimen name="height_xlarge">500dp</dimen>
+
+    <!--margin small from 5 to 15dp-->
+    <dimen name="margin_xxxxxsmall">5dp</dimen>
+    <dimen name="margin_xxxxsmall">7dp</dimen>
+    <dimen name="margin_xxxsmall">9dp</dimen>
+    <dimen name="margin_xxsmall">11dp</dimen>
+    <dimen name="margin_xsmall">13dp</dimen>
+    <dimen name="margin_small">15dp</dimen>
+
+    <!--margin small from 17 to 32dp-->
+    <dimen name="margin_xxxxxmedium">17dp</dimen>
+    <dimen name="margin_xxxxmedium">20dp</dimen>
+    <dimen name="margin_xxxmedium">23dp</dimen>
+    <dimen name="margin_xxmedium">27dp</dimen>
+    <dimen name="margin_xmedium">32dp</dimen>
+    <dimen name="margin_medium">36dp</dimen>
+
+
+    <!--margin large from 17 to 32dp-->
+    <dimen name="margin_xxxxxlarge">42dp</dimen>
+    <dimen name="margin_xxxxlarge">48dp</dimen>
+    <dimen name="margin_xxxlarge">55dp</dimen>
+    <dimen name="margin_xxlarge">60dp</dimen>
+    <dimen name="margin_xlarge">65dp</dimen>
+    <dimen name="margin_large">70dp</dimen>
+</resources>

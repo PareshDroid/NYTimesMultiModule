@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:startDestination="@id/splash_fragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_splash_fragment">
     <fragment
-        android:id="@+id/splash_fragment"
-        android:name="com.example.home.HomeFragment"
-        android:label="HomeFragment">
+        android:id="@+id/navigation_splash_fragment"
+        android:name="com.pareshdroid.nytimesmultimodule.ui.splash.SplashFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/next"
+            app:destination="@id/navigation_signin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_signin"
+        android:name="com.pareshdroid.nytimesmultimodule.ui.login.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_signin">
+
     </fragment>
 </navigation>
