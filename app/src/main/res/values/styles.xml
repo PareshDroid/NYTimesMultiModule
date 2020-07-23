@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -84,4 +84,23 @@
         <item name="android:fontFamily">@font/rubik</item>
         <item name="android:textSize">10sp</item>
     </style>
+    
+    <style name="containedButton">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/blue_500</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="rippleColor">@color/blue_700</item>
+        <item name="cornerRadius">200dp</item>
+        <item name="elevation">2dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/colorWhite</item>
+        <item name="boxStrokeErrorColor">@color/red_600</item>
+        <item name="hintTextColor">@color/gray_500</item>
+        <item name="fontFamily">@font/rubik</item>
+    </style>
+
 </resources>

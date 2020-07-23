@@ -34,4 +34,5 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
 
+    <color name="red_600">#E53935</color>
 </resources>
