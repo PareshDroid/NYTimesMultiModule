@@ -11,7 +11,7 @@ import com.pareshdroid.nytimesmultimodule.R
 
 class SplashFragment: Fragment() {
 
-    private val SPLASH_TIME_OUT:Long = 3000
+    private val SPLASH_TIME_OUT:Long = 1000
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +26,7 @@ class SplashFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         Handler().postDelayed({
-            findNavController().navigate(R.id.navigation_signin, null)
+           findNavController().navigate(R.id.navigation_signin,null)
         }, SPLASH_TIME_OUT)
     }
 }

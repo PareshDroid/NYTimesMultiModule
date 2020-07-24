@@ -1,15 +1,23 @@
 package com.pareshdroid.core.data.remote
 
-import android.content.Context
-import com.pareshdroid.core.di.scope.NetworkInfo
-import javax.inject.Inject
+import com.mindorks.bootcamp.instagram.data.remote.Endpoints
+import com.mindorks.bootcamp.instagram.data.remote.Networking
+import com.pareshdroid.core.data.remote.request.DummyRequest
+import com.pareshdroid.core.data.remote.response.DummyResponse
+import io.reactivex.Single
+import retrofit2.http.Body
+import retrofit2.http.Header
+import retrofit2.http.POST
 import javax.inject.Singleton
 
 @Singleton
-class NetworkService @Inject constructor(private val context:Context,
-                                         @NetworkInfo private val apiKey:String){
+interface NetworkService {
 
-    val dummyData: String
-        get() = "NETWORK_DUMMY_DATA"
+
+    @POST(Endpoints.DUMMY)
+    fun doDummyCall(
+        @Body request: DummyRequest,
+        @Header(Networking.HEADER_API_KEY) apiKey: String = Networking.API_KEY // default value set when Networking create is called
+    ): Single<DummyResponse>
 
 }
