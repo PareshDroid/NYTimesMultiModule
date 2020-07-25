@@ -1,4 +1,4 @@
-package com.pareshdroid.core.data.remote.model
+package com.pareshdroid.core.data.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

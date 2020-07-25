@@ -1,11 +1,9 @@
-package com.pareshdroid.core.data.local
+package com.pareshdroid.core.data.local.db
 
-import android.content.Context
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.pareshdroid.core.data.local.dao.DummyDao
-import com.pareshdroid.core.data.local.entity.DummyEntity
-import javax.inject.Inject
+import com.pareshdroid.core.data.local.db.dao.DummyDao
+import com.pareshdroid.core.data.local.db.entity.DummyEntity
 import javax.inject.Singleton
 
 @Singleton

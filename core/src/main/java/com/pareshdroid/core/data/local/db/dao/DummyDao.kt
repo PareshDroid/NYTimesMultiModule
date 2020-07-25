@@ -1,10 +1,10 @@
-package com.pareshdroid.core.data.local.dao
+package com.pareshdroid.core.data.local.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.pareshdroid.core.data.local.entity.DummyEntity
+import com.pareshdroid.core.data.local.db.entity.DummyEntity
 
 
 @Dao

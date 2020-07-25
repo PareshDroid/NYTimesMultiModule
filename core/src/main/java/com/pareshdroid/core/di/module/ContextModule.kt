@@ -21,8 +21,9 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.room.Room
 import com.mindorks.bootcamp.instagram.data.remote.Networking
-import com.pareshdroid.core.data.local.DatabaseService
+import com.pareshdroid.core.data.local.db.DatabaseService
 import com.pareshdroid.core.data.remote.NetworkService
+import com.pareshdroid.core.di.scope.ApplicationContext
 import com.pareshdroid.core.utils.NetworkHelper
 import com.pareshdroid.core.utils.RxSchedulerProvider
 import com.pareshdroid.core.utils.SchedulerProvider
@@ -47,6 +48,7 @@ class ContextModule(private val application: Application) {
      */
     @Singleton
     @Provides
+    @ApplicationContext
     fun provideContext(): Context = application
 
     @Provides
